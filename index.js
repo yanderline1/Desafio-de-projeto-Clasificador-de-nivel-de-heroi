@@ -1,6 +1,21 @@
-let nome = "João";
-let exp = 7324;
-let classe = "";
+heroi = {
+  nome: "João",
+  exp: 7324,
+  classe: "",
+  health: 10000
+}
+
+monstro = {
+  nome: "Goblin",
+  nivel: 1,
+  health: 100
+}
+
+function atacar(atacante, defensor){
+  defensor.health -= atacante.exp * 2
+}
+
+do {atacar} while (heroi.health > 0 && monstro.health > 0) 
 
 if (exp < 1000) {
   classe = "Ferro"
